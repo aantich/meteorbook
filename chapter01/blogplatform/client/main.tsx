@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import {LoginRegistration} from '/imports/ui/Views/LoginRegistration';
 import { EditPost } from '/imports/ui/Views/EditPost';
+import { MainPage } from '/imports/ui/MainPage';
 
 const router = createBrowserRouter([    
       {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "editpost",
         element: <EditPost />,
+      },
+      {
+        path: "/",
+        element: <MainPage />,
       }
     ])
 
